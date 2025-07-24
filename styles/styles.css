@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+/* resset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+/*body*/
+
+body, html {
+    background-image: url(../assets/fondorecreativo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-rows: repeat(1 1fr);
+    align-items: center;
+    justify-items: center;
+    background-image: url(../assets/FONDO\ HISTORIA\ 2.jpg);
+    width: 100%;
+    height: 28vh;
+    position: sticky;
+    top: 0px;
+}
+
+.logorecreativo-grow {
+    height: 28vh;
+    width: auto;
+    margin: 0 10px; 
+    grid-area: logo;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+    height: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.carrito-de-compras {
+    height: 3vh;
+    width: auto;
+}
+
+.carrito {
+    grid-column: 5 / 6;
+    grid-row: 1 /2;
+}
+
+.menu {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+h1 {
+    font-size: 1rem;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    margin: -50px;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    order: 2;
+    margin: 10px 0;
+}
+
+ul li a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    margin: 0 10px;
+}
+
+/* main */
+h2 {
+    font-size: 2.5rem;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    margin: 10vh 0;
+    font-style: oblique;
+}
+
+h3 {
+    font-size: 2rem;
+    color: rgb(39, 39, 39);
+    text-align: center;
+    font-style: oblique;
+}
+
+p {
+    font-size: 2rem;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    width: 90vw;
+    height: auto;
+} 
+
+/* main inicio marcas */
+
+.main {
+    height: auto;
+    width: 98vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, minmax(120px, auto));
+    align-items: center;
+    justify-items: center;
+}
+
+.img {
+    width: 95%;
+    height: 95%;
+}
+
+.img img {
+    width: 90%;
+    height: auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spyder {
+    grid-column: 4 / 7;
+    grid-row: 1 / 2;
+}
+
+.sustrato {
+    grid-column: 4 / 7;
+    grid-row: 2 / 3;
+}
+
+.new-coco {
+    grid-column: 4 / 7;
+    grid-row: 3 / 4;
+}
+
+.logoindex {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+
+}
+
+/* main inicio ofertas */
+
+.ofertas-section {
+    grid-column: 3 / 5;
+    grid-row: 5 / 7;
+    background: linear-gradient(135deg, #ad67aa, #d371d3); 
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+    object-fit: contain;
+    height: 200px;
+    width: auto
+}
+
+.ofertas {
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+    display: flex;
+    text-align: center;
+    background-color: rgb(120, 78, 126);
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    font-size: 2rem;
+
+    color: rgb(48, 47, 47);
+}
+
+.ofertas-titulo {
+    text-align: center;
+    background-color: rgb(120, 78, 126);
+    width: 100%;
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+    font-weight: 600;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.carousel-image {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.carousel-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-price {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+#carouselExampleInterval {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* main datos y sobre nosotros */
+
+.sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nosotros {
+    background-color: rgb(120, 78, 126);
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+.datos-cultivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.datos {
+    background-color: rgb(120, 78, 126);
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+.texto {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(51, 50, 50);
+    font-weight: 500;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.faq {
+    font-size: 2rem;
+    color: rgb(32, 32, 32);
+    margin: 0 auto;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* precio tienda y ofertas */
+
+.precio {
+    font-size: 1.5rem;
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+.producto1 {
+    width: 20vh;
+    height: auto;
+}
+
+.producto2 {
+    width: 25vh;
+    height: auto;
+}
+
+.producto3 {
+    width: 25vh;
+    height: auto;
+}
+
+.producto4 {
+    width: 20vh;
+    height: auto;
+}
+
+/* main tienda */
+
+.producto5 {
+    width: 30vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.producto6 {
+    width: 30vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.producto7 {
+    width: 30vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.producto8 {
+    width: 30vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* carrito de compras - form*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0;
+}
+
+form h2 {
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+    text-align: center;
+    background-color: rgb(120, 78, 126);
+    width: 100%;
+    height: 10vh;
+}
+
+.titulo-carrito {
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(120, 78, 126);
+    width: 100%;
+    height: 10vh;
+}
+
+form label {
+    font-size: 1.5rem;
+    color: rgb(36, 35, 35);
+    margin: 10px 0;
+}
+
+
+
+/*footer*/
+
+
+.contactanos {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    margin: 0vh 0;
+    text-align: left;
+    bottom: 20px;
+    font-weight: bold;
+}
+
+.redes-sociales {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+
+.facebook {
+    width: 6vh;
+    height: auto;
+}
+
+.instagram {
+    width: 6vh;
+    height: auto;
+}
+
+.whatsapp {
+    width: 6vh;
+    height: auto;
+}
+
+.medios-de-pago1 {
+    text-align: center;
+}
+
+.medios-de-pago {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    margin: 0vh 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.visa {
+    width: 6vh;
+    height: auto;
+    margin: 1vh 0;
+}
+
+.mastercard {
+    width: 5vh;
+    height: auto;
+}
+
+
+@media (max-width: 425px) {
+
+    header {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 15vh;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .logorecreativo-grow {
+    height: 17vh;
+    width: auto;
+    }
+
+    .logo{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: -3vh;
+    }
+
+    .carrito-de-compras {
+    height: 2vh;
+    width: auto;
+    }
+
+    .carrito {
+    grid-column:3 / 4;
+    grid-row: 2 / 3;
+    }
+
+    .menu {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    }
+
+    ul li a {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .texto {
+        font-size: 1.2rem;
+    }
+
+    .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, minmax(120px, auto));
+    align-items: center;
+    justify-items: center;
+    }
+    .spyder {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    }
+
+    .sustrato {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    }
+
+    .new-coco {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    }
+
+    .logoindex {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    width: 350px;
+    height: auto;
+    }
+
+    .ofertas {
+        grid-column: 1 /3;
+        grid-row: 7 / 8;
+    }
+
+    .ofertas-section {
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
+    }
+
+    .carousel-content {
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .carousel-image {
+        max-width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .carousel-text {
+        padding-left: 0; 
+        text-align: center;
+    }
+
+    .carousel-title {
+        font-size: 1.2rem; 
+    }
+
+    .carousel-price {
+        font-size: 1rem; 
+    }
+
+    .contactanos {
+        font-size: 1rem;
+    }
+
+    .facebook {
+    width: 5vw;
+    height: auto;
+}
+
+.instagram {
+    width: 5vw;
+    height: auto;
+}
+
+.whatsapp {
+    width: 5vw;
+    height: auto;
+}
+
+.medios-de-pago {
+    font-size: 1rem;
+}
+
+.visa {
+    width: 5vw;
+    height: auto;
+    margin: 1vh 0;
+}
+
+.mastercard {
+    width: 4vw;
+    height: auto;
+}
+}
