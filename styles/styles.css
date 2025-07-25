@@ -34,16 +34,15 @@ header {
     justify-items: center;
     background-image: url(../assets/FONDO\ HISTORIA\ 2.jpg);
     width: 100%;
-    height: 28vh;
+    height: 15vh;
     position: sticky;
     top: 0px;
 }
 
 .logorecreativo-grow {
-    height: 28vh;
+    height: 20vh;
     width: auto;
-    margin: 0 10px; 
-    grid-area: logo;
+    margin: -3vh; 
 }
 
 .logo{
@@ -52,7 +51,7 @@ header {
     align-items: center;
     justify-content: start; 
     height: 100%;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 
@@ -67,7 +66,7 @@ header {
 }
 
 .menu {
-    grid-column: 3 / 5;
+    grid-column: 2 / 5;
     grid-row: 1 / 2;
 }
 
@@ -75,7 +74,8 @@ h1 {
     font-size: 1rem;
     color: rgb(5, 5, 5);
     text-align: center;
-    margin: -50px;
+    margin: -15px;
+    font-weight: bold;
 }
 
 .logo a {
@@ -87,7 +87,7 @@ h1 {
 
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     list-style: none;
     order: 2;
@@ -111,21 +111,18 @@ h2 {
     color: rgb(29, 29, 29);
     text-align: center;
     margin: 10vh 0;
-    font-style: oblique;
 }
 
 h3 {
     font-size: 2rem;
     color: rgb(39, 39, 39);
     text-align: center;
-    font-style: oblique;
 }
 
 p {
     font-size: 2rem;
     color: rgb(59, 59, 59);
     text-align: center;
-    width: 90vw;
     height: auto;
 } 
 
@@ -178,28 +175,14 @@ p {
 
 /* main inicio ofertas */
 
-.ofertas-section {
-    grid-column: 3 / 5;
-    grid-row: 5 / 7;
-    background: linear-gradient(135deg, #ad67aa, #d371d3); 
-    border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-inner img {
-    border-radius: 10px;
-    object-fit: contain;
-    height: 200px;
-    width: auto
-}
-
 .ofertas {
     grid-column: 1 / 7;
     grid-row: 4 / 5;
     display: flex;
     text-align: center;
     background-color: rgb(120, 78, 126);
-    width: 100%;
+    border-radius: 15px;
+    width: 90%;
     height: 10vh;
     align-items: center;
     font-size: 2rem;
@@ -210,44 +193,65 @@ p {
 .ofertas-titulo {
     text-align: center;
     background-color: rgb(120, 78, 126);
+
     width: 100%;
     font-size: 2rem;
     color: rgb(43, 42, 42);
     font-weight: 600;
 }
 
-.carousel-content {
+.ofertas-section {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: space-evenly;
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+    max-width: 98vw;
+
 }
 
-.carousel-image {
-    max-width: 50%;
+.card {
+    width: 20vw;
     height: auto;
-    object-fit: contain;
+    margin: 5px;
+    background-color: rgb(151, 99, 147);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.carousel-text {
-    flex: 1;
-    padding-left: 20px;
+.card-img-top {
+    width: 10vw;
+    height: auto;
+    margin: 3px;
 }
 
-.carousel-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+.card-title {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
     margin: 0;
 }
 
-.carousel-price {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 5px 0;
+.card-text {
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+    margin: 0;
+    font-weight: 600;
 }
-#carouselExampleInterval {
-    max-width: 600px;
-    margin: 0 auto;
+
+.btn {
+    background-color: rgb(120, 78, 126);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* main datos y sobre nosotros */
@@ -261,7 +265,8 @@ p {
 
 .nosotros {
     background-color: rgb(120, 78, 126);
-    width: 100%;
+    border-radius: 15px;
+    width: 90%;
     height: 10vh;
     text-align: center;
 }
@@ -275,6 +280,7 @@ p {
 
 .datos {
     background-color: rgb(120, 78, 126);
+    border-radius: 15px;
     width: 100%;
     height: 10vh;
     text-align: center;
@@ -390,10 +396,7 @@ form label {
     margin: 10px 0;
 }
 
-
-
 /*footer*/
-
 
 .contactanos {
     font-size: 1.5rem;
@@ -518,16 +521,22 @@ form label {
     .spyder {
     grid-column: 1 / 3;
     grid-row: 4 / 5;
+    display: flex;
+    justify-content: center;
     }
 
     .sustrato {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
+    display: flex;
+    justify-content: center;
     }
 
     .new-coco {
     grid-column: 1 / 3;
     grid-row: 6 / 7;
+    display: flex;
+    justify-content: center;
     }
 
     .logoindex {
@@ -535,6 +544,8 @@ form label {
     grid-row: 1 / 4;
     width: 350px;
     height: auto;
+    display: flex;
+    justify-content: center;
     }
 
     .ofertas {
@@ -545,31 +556,24 @@ form label {
     .ofertas-section {
     grid-column: 1 / 3;
     grid-row: 8 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
 
-    .carousel-content {
-        flex-direction: column;
-        padding: 0px;
-        text-align: center;
+    .card {
+        width: 90%;
+        height: auto;
+        margin: 5px;
     }
 
-    .carousel-image {
-        max-width: 100%; 
-        margin-bottom: 10px; 
+    .card-img-top {
+        width: 40%;
+        height: auto;
+        margin: 3px;
     }
 
-    .carousel-text {
-        padding-left: 0; 
-        text-align: center;
-    }
-
-    .carousel-title {
-        font-size: 1.2rem; 
-    }
-
-    .carousel-price {
-        font-size: 1rem; 
-    }
 
     .contactanos {
         font-size: 1rem;
