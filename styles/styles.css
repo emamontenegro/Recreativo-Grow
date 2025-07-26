@@ -15,7 +15,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 body {
@@ -296,91 +296,96 @@ p {
     text-decoration: underline;
 }
 
-/* precio tienda y ofertas */
+/* tienda */
 
-.precio {
-    font-size: 1.5rem;
-    color: rgb(51, 51, 51);
+.tienda {
+    background-color: rgb(120, 78, 126);
+    border-radius: 15px;
+    width: auto;
+    height: 10vh;
     text-align: center;
+    margin: 15px;
 }
 
-.producto1 {
-    width: 20vh;
-    height: auto;
-}
+.productos {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
 
-.producto2 {
-    width: 25vh;
-    height: auto;
-}
-
-.producto3 {
-    width: 25vh;
-    height: auto;
-}
-
-.producto4 {
-    width: 20vh;
-    height: auto;
-}
-
-/* main tienda */
-
-.producto5 {
-    width: 30vh;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.producto6 {
-    width: 30vh;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.producto7 {
-    width: 30vh;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.producto8 {
-    width: 30vh;
-    height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 /* carrito de compras - form*/
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10vh 0;
+
+.titulo-carrito {
+    background-color: rgb(120, 78, 126);
+    border-radius: 15px;
+    width: auto;
+    height: 10vh;
+    text-align: center;
+    margin: 15px;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgb(120, 78, 126);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 form h2 {
-    font-size: 2rem;
-    color: rgb(43, 42, 42);
     text-align: center;
-    background-color: rgb(120, 78, 126);
-    width: 100%;
-    height: 10vh;
+    margin-bottom: 20px;
+    color: rgb(26, 25, 25);
 }
 
-.titulo-carrito {
-    font-size: 2rem;
-    color: rgb(43, 42, 42);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(120, 78, 126);
-    width: 100%;
-    height: 10vh;
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
 }
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: rgb(120, 78, 126);
+    box-shadow: 0 0 10px #16161633;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(151, 99, 147);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(121, 0, 151);
+}
+
 
 form label {
     font-size: 1.5rem;
@@ -459,6 +464,8 @@ form label {
     .logorecreativo-grow {
     height: 17vh;
     width: auto;
+    margin: -2vh;
+    padding-left: 30vw;
     }
 
     ul {
@@ -548,9 +555,31 @@ form label {
         height: auto;
         margin: 3px;
     }
+/* form carrito de compras */
 
-/* main datos y sobre nosotros */
+    form {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
 
+    form h2 {
+        font-size: 1.5rem;
+    }
+
+    form label {
+        font-size: 1.2rem;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        font-size: 1.2rem;
+    }
+
+    form button {
+        font-size: 1.2rem;
+    }
 /* footer */
 
     .contactanos {

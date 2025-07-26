@@ -47,23 +47,35 @@
         <section >
             <h2 class="titulo-carrito">Carrito de Compras</h2>
         </section>
-        <section>
-            <article>
-                <h4>boost - by dr.dabber e rig</h4>
-                        <img src="https://www.rosariogrow.com.ar/web/image/product.product/3780/image_1024/%5B628%5D%20BOOST%20-%20BY%20DR.DABBER%20E%20RIG?unique=2e04b77" alt="imagen del producto2" title="producto"class="producto2">
-                        <p>$xxxx</p>
-                <button>Añadir al carrito</button>
-            </article>
-            <article>
-                <h4>volcano gold</h4>
-                        <img src="https://www.rosariogrow.com.ar/web/image/product.product/3773/image_1024/%5B621%5D%20Volcano%20GOLD%20-%20Storz%20%26%20Bickel?unique=2e04b77" alt="imagen del producto3" title="producto"class="producto3">
-                        <p>$xxxx</p>
-                <button>Añadir al carrito</button>
-            </article>
+        <section class="container d-flex flex-wrap justify-content-around">
+            <div class="card">
+                <img src="https://www.rosariogrow.com.ar/web/image/product.template/3672/image_512/RAW%20HAT%20BLACK?unique=26bd05b" class="card-img-top" alt="raw-hat-black" title="raw-hat-black">
+                <div class="card-body">
+                    <h5 class="card-title">Raw Hat - Black</h5>
+                    <p class="card-text"> $35.000</p>
+                    <a href="#" class="btn btn-primary">Quitar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.rosariogrow.com.ar/web/image/product.template/3718/image_512/%5B566%5D%20Pins%20-%20LION%20R%20CIRCUS?unique=2e04b77" class="card-img-top" alt="pins-lion-r-circus" title="pins-lion-r-circus">
+                <div class="card-body">
+                    <h5 class="card-title">Pins - Lion R Circus</h5>
+                    <p class="card-text"> $20.000</p>
+                    <a href="#" class="btn btn-primary">Quitar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.rosariogrow.com.ar/web/image/product.template/3495/image_512/%5B343%5D%20Fan%20of%20Hash%20%2301%20Classic%20150M?unique=2e04b77" class="card-img-top" alt="fan-of-hash-classic" title="fan-of-hash-classic">
+                <div class="card-body">
+                    <h5 class="card-title">Fan of Hash #01 Classic 150M</h5>
+                    <p class="card-text"> $70.000</p>
+                    <a href="#" class="btn btn-primary">Quitar</a>
+                </div>
+            </div>
         </section>
         <form>
             <h2>Detalles de Envío</h2>
-            <label for="nombre">Nombre completo:</label>
+            <label for="nombre">Nombre Completo:</label>
             <input type="text" id="nombre" name="nombre" required>
 
             <label for="direccion">Dirección:</label>
@@ -79,6 +91,7 @@
                 <option value="paypal">PayPal</option>
                 <option value="transferencia-bancaria">Transferencia Bancaria</option>
             </select>
+            <button type="submit">Enviar</button>
         </form>
     </main>
     <footer>
