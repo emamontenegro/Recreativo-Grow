@@ -483,6 +483,8 @@ form label {
         font-size: 1.2rem;
     }
 
+/* main inicio marcas */
+
     .main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, minmax(120px, auto));
@@ -519,6 +521,8 @@ form label {
     justify-content: center;
     }
 
+/* main inicio ofertas */
+
     .ofertas {
         grid-column: 1 /3;
         grid-row: 7 / 8;
@@ -545,6 +549,9 @@ form label {
         margin: 3px;
     }
 
+/* main datos y sobre nosotros */
+
+/* footer */
 
     .contactanos {
         font-size: 1rem;
