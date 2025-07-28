@@ -72,6 +72,7 @@ nav ul li a {
     color: rgb(255, 255, 255);
     border: 2px solid rgb(141, 77, 150) !important;
     background-color: rgb(141, 77, 150) !important;
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8) !important;
     padding: 10px !important;
     border-radius: 20px;
     transition: 0.3s;
@@ -89,6 +90,17 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: 500;
 }
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFDE59' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    filter: drop-shadow(0 0 2px #000);
+}
+
+
 /* main */
 h2 {
     font-size: 2.5rem;
@@ -168,15 +180,11 @@ p {
     width: 90%;
     height: 10vh;
     align-items: center;
-    font-size: 2rem;
-
-    color: rgb(48, 47, 47);
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
 }
 
 .ofertas-titulo {
     text-align: center;
-    background-color: rgb(120, 78, 126);
-
     width: 100%;
     font-size: 2rem;
     color: rgb(43, 42, 42);
@@ -302,7 +310,7 @@ p {
 /* tienda */
 
 .tienda {
-    background-color: rgb(120, 78, 126);
+    background-color: rgb(120, 78, 126);box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
     border-radius: 15px;
     width: auto;
     height: 10vh;
@@ -330,6 +338,7 @@ p {
     height: 10vh;
     text-align: center;
     margin: 15px;
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
 }
 
 form {
@@ -468,7 +477,7 @@ form label {
     height: 17vh;
     width: auto;
     margin: -2vh;
-    padding-left: 30vw;
+    padding-left: 32vw;
     }
 
     ul {
