@@ -200,7 +200,7 @@ p {
     margin: 5px;
     background-color: rgb(151, 99, 147);
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,8 +274,10 @@ p {
 .datos-y-nosotros {
     display: block;
     border: 5px solid rgb(120, 78, 126);
+    background-color: rgb(255, 255, 255, 0.5);
     border-radius: 20px;
     margin: 5px;
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
 }
 
 .texto {
@@ -286,6 +288,7 @@ p {
     width: 90%;
     height: auto;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
 .faq {
@@ -334,7 +337,7 @@ form {
     margin: 50px auto;
     padding: 30px;
     background-color: rgb(120, 78, 126);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
     border-radius: 15px;
 }
 
@@ -379,7 +382,7 @@ form button {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 form button:hover {
@@ -583,21 +586,21 @@ form label {
 /* footer */
 
     .contactanos {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .facebook {
-    width: 5vw;
+    width: 8vw;
     height: auto;
 }
 
 .instagram {
-    width: 5vw;
+    width: 8vw;
     height: auto;
 }
 
 .whatsapp {
-    width: 5vw;
+    width: 8vw;
     height: auto;
 }
 
@@ -606,13 +609,13 @@ form label {
 }
 
 .visa {
-    width: 5vw;
+    width: 8vw;
     height: auto;
     margin: 1vh 0;
 }
 
 .mastercard {
-    width: 4vw;
+    width: 8vw;
     height: auto;
 }
 }
