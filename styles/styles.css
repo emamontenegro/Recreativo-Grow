@@ -420,8 +420,8 @@ form label {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
     text-align: left;
+    padding: 10px;
 }
 
 .facebook {
@@ -441,6 +441,7 @@ form label {
 
 .medios-de-pago1 {
     text-align: center;
+    padding: 10px;
 }
 
 .medios-de-pago {
@@ -477,7 +478,7 @@ form label {
     height: 17vh;
     width: auto;
     margin: -2vh;
-    padding-left: 32vw;
+    padding-left: 29vw;
     }
 
     ul {
