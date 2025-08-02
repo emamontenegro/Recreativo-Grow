@@ -1,0 +1,80 @@
+@use "variables" as v;
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    .navbar {
+        background-image: url(../assets/FONDO\ HISTORIA\ 2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 15vh;
+        .logorecreativo-grow {
+            height: 20vh;
+            width: auto;
+            margin: -3vh;
+            padding-left: 20vw;
+            h1 {
+                display: none;
+            }
+            a  {
+                text-decoration: none;
+            }
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .carrito-de-compras {
+                height: 3vh;
+                width: auto;
+            }
+            .nav-link {
+                    color: rgb(255, 255, 255);
+                    border: 2px solid v.$button-color !important;
+                    background-color: v.$button-color !important;
+                    box-shadow: v.$box-shadow !important;
+                    padding: 10px !important;
+                    border-radius: 20px;
+                    transition: 0.3s;
+                    font-size: 1.2rem;
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: v.$button-hover-color !important;
+                        border: 2px solid v.$button-hover-color !important;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        .navbar-toggler {
+            border: none;
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFDE59' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                width: 30px;
+                height: 30px;
+                filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+            }
+        }
+    }
+    @include v.mobile {
+        height: auto;
+        .navbar {
+            .logorecreativo-grow {
+                height: 17vh;
+                width: auto;
+                margin: -2vh;
+                padding-left: 29vw;
+            }
+            ul {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    }
+}

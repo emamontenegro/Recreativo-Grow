@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+// Variables
+
+$font: Smooch Sans;
+$title-color: rgb(29, 29, 29);
+$text-color:  rgb(59, 59, 59);
+$background-color: rgb(120, 78, 126);
+$button-color: rgb(141, 77, 150);
+$button-hover-color: rgb(121, 0, 151);
+$cards-color: rgb(151, 99, 147);
+$box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
+$secondary-color: rgb(255, 255, 255);
+$rrss-image: 6vh;
+$rrss-image-hover: 7vh;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+body {
+    background-image: url(../assets/fondorecreativo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: $font;
+}
+
+%flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%titles {
+    background-color: $background-color;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+%text-box {
+    background-color: $background-color;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+%box {
+    display: block;
+    border: 5px solid $background-color;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin: 3vh auto;
+    box-shadow: $box-shadow;
+}
+
+%text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(51, 50, 50);
+    font-weight: 500;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@mixin mobile {
+    @media (max-width: 425px) {
+        @content;
+    }
+}

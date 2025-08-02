@@ -1,0 +1,135 @@
+@use "variables" as v;
+
+main  {
+    .titulo-carrito {
+        @extend %titles;
+        width: auto;
+        height: 10vh;
+        margin: 15px;
+        box-shadow: v.$box-shadow;
+        color: v.$title-color;
+        font-weight: 600;
+        border-radius: 15px;
+    }
+    .card {
+        width: 20vw;
+        height: auto;
+        margin: 5px;
+        background-color: v.$cards-color;
+        border-radius: 25px;
+        box-shadow: v.$box-shadow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .card-img-top {
+            width: 10vw;
+            height: auto;
+            border-radius: 15px 15px 15px 15px;
+            margin: 3px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: v.$secondary-color;
+            margin: 10px 0;
+        }
+        .card-text {
+            font-size: 2rem;
+            color: v.$text-color;
+            margin: 0;
+            font-weight: 600;
+        }
+        .btn {
+            background-color: v.$button-color;
+            color: v.$secondary-color;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: v.$button-hover-color;
+                color: v.$secondary-color;
+            }
+        }
+    }
+    .envios {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: v.$background-color;
+        box-shadow: v.$box-shadow;
+        border-radius: 15px;
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: v.$title-color;
+            font-weight: 600;
+        }
+        label {
+            text-align: center;
+            margin-bottom: 20px;
+            color: v.$title-color;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            &:focus {
+                border-color: v.$button-color;
+                box-shadow: v.$box-shadow;
+                }
+            }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: rgb(151, 99, 147);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            &:hover {
+                background-color: v.$button-hover-color;
+                box-shadow: v.$box-shadow;
+            }
+        }
+    }
+    .card {
+        width: 80%;
+        height: auto;
+        margin: 5px;
+        .card-img-top {
+            width: 40%;
+            height: auto;
+            border-radius: 15px 15px 15px 15px;
+            margin: 3px;
+        }
+    }
+    form {
+        max-width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        h2 {
+            font-size: 1.5rem;
+        }
+        label {
+            font-size: 1.2rem;
+        }
+        input, textarea, select {
+            font-size: 1.2rem;
+        }
+        button {
+            font-size: 1.2rem;
+        }
+    }
+}

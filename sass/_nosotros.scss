@@ -1,0 +1,34 @@
+@use "variables" as v;
+
+.nosotros-main {
+    .sobre-nosotros {
+        @extend %flex-center;
+        .box-nosotros {
+            @extend %box;
+            .nosotros {
+                @extend %titles;
+                font-weight: 600;
+            }
+            .texto {
+                @extend %text;
+            }
+        }
+    }
+    @include v.mobile {
+        .sobre-nosotros {
+            .box-nosotros {
+                width: 90%;
+                height: auto;
+                margin: 10px auto;
+                .nosotros {
+                    width: 100%;
+                    height: 10vh;
+                    padding: 1vh 0;
+                }
+                .texto {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@use "variables" as v;
+
+.datos-main {
+    .datos-cultivo {
+        @extend %flex-center;
+        .box-datos {
+            @extend %box;
+            .datos {
+                @extend %titles;
+                font-weight: 600;
+            }
+            .texto {
+                @extend %text;
+            }
+        }
+    }
+    @include v.mobile {
+        .datos-cultivo {
+            .box-datos {
+                width: 90%;
+                height: auto;
+                margin: 10px auto;
+                .datos {
+                    width: 100%;
+                    height: 10vh;
+                    padding: 1vh 0;
+                }
+                .texto {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

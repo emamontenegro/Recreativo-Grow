@@ -1,0 +1,52 @@
+@use "variables" as v;
+
+footer {
+    .redes-sociales {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: left;
+        padding: 10px;
+        .contactanos {
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+            margin: 0vh 0;
+            text-align: left;
+            bottom: 20px;
+            font-weight: bold;
+        }
+        .facebook,
+        .instagram,
+        .whatsapp {
+            width: v.$rrss-image;
+            height: auto;
+            margin: 0 5px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                width: v.$rrss-image-hover;
+            }
+        }
+    }
+    .medios-de-pago1 {
+        text-align: center;
+        padding: 10px;
+        .medios-de-pago {
+            font-size: 1.5rem;
+            color: rgb(0, 0, 0);
+            margin: 0vh 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .visa {
+            width: 6vh;
+            height: auto;
+            margin: 1vh 0;
+        }
+        .mastercard {
+            width: 5vh;
+            height: auto;
+    }
+    }
+}
+
+
