@@ -49,6 +49,7 @@ header {
                         background-color: v.$button-hover-color !important;
                         border: 2px solid v.$button-hover-color !important;
                         color: rgb(255, 255, 255);
+                        animation: button-hover 2s ease-in-out;
                     }
                 }
             }

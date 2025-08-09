@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
 
 main .titulo-carrito, main .tienda, .datos-main .datos-cultivo .box-datos .datos, .nosotros-main .sobre-nosotros .box-nosotros .nosotros {
@@ -48,6 +49,17 @@ main .titulo-carrito, main .tienda, .datos-main .datos-cultivo .box-datos .datos
   line-height: 1.6;
 }
 
+@keyframes button-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 header {
   width: 100%;
   position: sticky;
@@ -100,6 +112,7 @@ header .navbar .navbar-nav .nav-link:hover {
   background-color: rgb(121, 0, 151) !important;
   border: 2px solid rgb(121, 0, 151) !important;
   color: rgb(255, 255, 255);
+  animation: button-hover 2s ease-in-out;
 }
 header .navbar .navbar-toggler {
   border: none;
@@ -147,12 +160,12 @@ footer .redes-sociales .whatsapp {
   width: 6vh;
   height: auto;
   margin: 0 5px;
-  transition: all 0.3s ease-in-out;
 }
 footer .redes-sociales .facebook:hover,
 footer .redes-sociales .instagram:hover,
 footer .redes-sociales .whatsapp:hover {
   width: 7vh;
+  animation: button-hover 2s ease-in-out;
 }
 footer .medios-de-pago1 {
   text-align: center;
@@ -278,11 +291,13 @@ footer .medios-de-pago1 .mastercard {
   padding: 10px 20px;
   font-size: 1.2rem;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   cursor: pointer;
 }
 .home .ofertas-section .card .btn:hover {
   background-color: rgb(121, 0, 151);
   color: rgb(255, 255, 255);
+  animation: button-hover 2s ease-in-out;
 }
 @media (max-width: 425px) {
   .home {
@@ -342,6 +357,9 @@ footer .medios-de-pago1 .mastercard {
   }
 }
 
+.nosotros-main {
+  justify-items: center;
+}
 .nosotros-main .sobre-nosotros .box-nosotros .nosotros {
   font-weight: 600;
 }
@@ -361,6 +379,9 @@ footer .medios-de-pago1 .mastercard {
   }
 }
 
+.datos-main {
+  justify-items: center;
+}
 .datos-main .datos-cultivo .box-datos .datos {
   font-weight: 600;
 }
@@ -434,11 +455,13 @@ main .productos .card .btn {
   padding: 10px 20px;
   font-size: 1.2rem;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   cursor: pointer;
 }
 main .productos .card .btn:hover {
   background-color: rgb(121, 0, 151);
   color: rgb(255, 255, 255);
+  animation: button-hover 2s ease-in-out;
 }
 @media (max-width: 425px) {
   main .productos {
@@ -504,11 +527,13 @@ main .card .btn {
   padding: 10px 20px;
   font-size: 1.2rem;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   cursor: pointer;
 }
 main .card .btn:hover {
   background-color: rgb(121, 0, 151);
   color: rgb(255, 255, 255);
+  animation: button-hover 2s ease-in-out;
 }
 main .envios {
   max-width: 400px;
@@ -553,40 +578,43 @@ main .envios button {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+  box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s;
 }
 main .envios button:hover {
   background-color: rgb(121, 0, 151);
   box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
+  animation: button-hover 2s ease-in-out;
 }
-main .card {
-  width: 80%;
-  height: auto;
-  margin: 5px;
-}
-main .card .card-img-top {
-  width: 40%;
-  height: auto;
-  border-radius: 15px 15px 15px 15px;
-  margin: 3px;
-}
-main form {
-  max-width: 80%;
-  margin: 20px auto;
-  padding: 20px;
-}
-main form h2 {
-  font-size: 1.5rem;
-}
-main form label {
-  font-size: 1.2rem;
-}
-main form input, main form textarea, main form select {
-  font-size: 1.2rem;
-}
-main form button {
-  font-size: 1.2rem;
+@media (max-width: 425px) {
+  main .card {
+    width: 80%;
+    height: auto;
+    margin: 5px;
+  }
+  main .card .card-img-top {
+    width: 40%;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
+    margin: 3px;
+  }
+  main form {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  main form h2 {
+    font-size: 1.5rem;
+  }
+  main form label {
+    font-size: 1.2rem;
+  }
+  main form input, main form textarea, main form select {
+    font-size: 1.2rem;
+  }
+  main form button {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

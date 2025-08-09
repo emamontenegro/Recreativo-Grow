@@ -34,16 +34,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 
 %titles {
-    background-color: $background-color;
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-}
-
-%text-box {
     background-color: $background-color;
     width: 100%;
     height: 10vh;
@@ -68,6 +62,18 @@ body {
     height: auto;
     margin: 0 auto;
     line-height: 1.6;
+}
+
+@keyframes button-hover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 @mixin mobile {

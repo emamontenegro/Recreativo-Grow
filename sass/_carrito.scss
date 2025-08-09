@@ -47,10 +47,12 @@ main  {
             padding: 10px 20px;
             font-size: 1.2rem;
             border-radius: 5px;
+            box-shadow: v.$box-shadow;
             cursor: pointer;
             &:hover {
                 background-color: v.$button-hover-color;
                 color: v.$secondary-color;
+                animation: button-hover 2s ease-in-out;
             }
         }
     }
@@ -96,40 +98,44 @@ main  {
             border: none;
             border-radius: 10px;
             font-size: 16px;
+            box-shadow: v.$box-shadow;
             cursor: pointer;
-            transition: background-color 0.3s, box-shadow 0.3s;
             &:hover {
                 background-color: v.$button-hover-color;
                 box-shadow: v.$box-shadow;
+                animation: button-hover 2s ease-in-out;
             }
         }
     }
-    .card {
-        width: 80%;
-        height: auto;
-        margin: 5px;
-        .card-img-top {
-            width: 40%;
+    @include v.mobile {
+        .card {
+            width: 80%;
             height: auto;
-            border-radius: 15px 15px 15px 15px;
-            margin: 3px;
+            margin: 5px;
+            .card-img-top {
+                width: 40%;
+                height: auto;
+                border-radius: 15px 15px 15px 15px;
+                margin: 3px;
+            }
         }
-    }
-    form {
-        max-width: 80%;
-        margin: 20px auto;
-        padding: 20px;
-        h2 {
-            font-size: 1.5rem;
-        }
-        label {
-            font-size: 1.2rem;
-        }
-        input, textarea, select {
-            font-size: 1.2rem;
-        }
-        button {
-            font-size: 1.2rem;
+    
+        form {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            h2 {
+                font-size: 1.5rem;
+            }       
+            label {
+                font-size: 1.2rem;
+            }
+            input, textarea, select {
+                font-size: 1.2rem;
+            }
+            button {
+                font-size: 1.2rem;
+            }
         }
     }
 }

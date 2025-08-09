@@ -1,6 +1,7 @@
 @use "variables" as v;
 
 .nosotros-main {
+    justify-items: center;
     .sobre-nosotros {
         @extend %flex-center;
         .box-nosotros {

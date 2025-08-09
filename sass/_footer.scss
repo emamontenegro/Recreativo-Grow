@@ -21,9 +21,9 @@ footer {
             width: v.$rrss-image;
             height: auto;
             margin: 0 5px;
-            transition: all 0.3s ease-in-out;
             &:hover {
                 width: v.$rrss-image-hover;
+                animation: button-hover 2s ease-in-out;
             }
         }
     }
@@ -45,7 +45,7 @@ footer {
         .mastercard {
             width: 5vh;
             height: auto;
-    }
+        }
     }
 }
 

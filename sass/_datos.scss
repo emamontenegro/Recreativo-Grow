@@ -1,6 +1,7 @@
 @use "variables" as v;
 
 .datos-main {
+    justify-items: center;
     .datos-cultivo {
         @extend %flex-center;
         .box-datos {

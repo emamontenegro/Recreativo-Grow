@@ -100,10 +100,12 @@
                 padding: 10px 20px;
                 font-size: 1.2rem;
                 border-radius: 5px;
+                box-shadow: v.$box-shadow;
                 cursor: pointer;
                 &:hover {
                     background-color: v.$button-hover-color;
                     color: v.$secondary-color;
+                    animation: button-hover 2s ease-in-out;
                 }
             }
         }
