@@ -67,7 +67,7 @@ header {
   z-index: 2;
 }
 header .navbar {
-  background-image: url(../assets/FONDO\ HISTORIA\ 2.jpg);
+  background-image: url(../assets/fondo-historia2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -79,11 +79,19 @@ header .navbar .logorecreativo-grow {
   margin: -3vh;
   padding-left: 20vw;
 }
-header .navbar .logorecreativo-grow h1 {
-  display: none;
-}
 header .navbar .logorecreativo-grow a {
   text-decoration: none;
+}
+header .navbar .navbar-brand h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 header .navbar .navbar-nav {
   display: flex;
@@ -168,7 +176,8 @@ footer .redes-sociales .whatsapp:hover {
   animation: button-hover 2s ease-in-out;
 }
 footer .medios-de-pago1 {
-  text-align: center;
+  text-align: right;
+  justify-items: right;
   padding: 10px;
 }
 footer .medios-de-pago1 .medios-de-pago {
@@ -190,7 +199,7 @@ footer .medios-de-pago1 .mastercard {
 
 .home {
   height: auto;
-  width: 98vw;
+  width: 96vw;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, minmax(120px, auto));
@@ -258,7 +267,7 @@ footer .medios-de-pago1 .mastercard {
   width: 20vw;
   height: auto;
   margin: 5px;
-  background-color: rgb(151, 99, 147);
+  background-color: rgba(151, 99, 147, 0.8);
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   display: flex;
@@ -422,7 +431,7 @@ main .productos .card {
   width: 20vw;
   height: auto;
   margin: 5px;
-  background-color: rgb(151, 99, 147);
+  background-color: rgba(151, 99, 147, 0.8);
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   display: flex;
@@ -494,7 +503,7 @@ main .card {
   width: 20vw;
   height: auto;
   margin: 5px;
-  background-color: rgb(151, 99, 147);
+  background-color: rgba(151, 99, 147, 0.8);
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   display: flex;

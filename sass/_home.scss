@@ -2,7 +2,7 @@
 
 .home {
     height: auto;
-    width: 98vw;
+    width: 96vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, minmax(120px, auto));
@@ -68,7 +68,7 @@
             width: 20vw;
             height: auto;
             margin: 5px;
-            background-color: v.$cards-color;
+            background-color: rgba(v.$cards-color, 0.8 );
             border-radius: 25px;
             box-shadow: v.$box-shadow;
             display: flex;

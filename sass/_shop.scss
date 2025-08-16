@@ -22,7 +22,7 @@ main {
             width: 20vw;
             height: auto;
             margin: 5px;
-            background-color: v.$cards-color;
+            background-color: rgba(v.$cards-color, 0.8 );
             border-radius: 25px;
             box-shadow: v.$box-shadow;
             display: flex;
