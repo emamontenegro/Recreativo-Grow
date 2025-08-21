@@ -2,7 +2,7 @@
 
 .home {
     height: auto;
-    width: 96vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, minmax(120px, auto));
@@ -16,8 +16,8 @@
             height: auto;
             max-width: 90%;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-items: center;
         }
     }
     .sustrato {
@@ -113,8 +113,6 @@
     @include v.mobile {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(7, minmax(120px, auto));
-        align-items: center;
-        justify-items: center;
         .sustrato {
             grid-column: 1 / 3;
             grid-row: 5 / 6;
