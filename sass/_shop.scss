@@ -12,7 +12,7 @@ main {
     }
     .productos {
         display: flex;
-        flex-flow: wrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 20px;
