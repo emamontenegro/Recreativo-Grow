@@ -57,10 +57,10 @@ main  {
         }
     }
     .envios {
-        max-width: 400px;
+        max-width: 350px;
         margin: 50px auto;
         padding: 30px;
-        background-color: v.$background-color;
+        background-color: rgba(v.$background-color, 0.8);
         box-shadow: v.$box-shadow;
         border-radius: 15px;
         h2 {
@@ -120,7 +120,7 @@ main  {
             }
         }
     
-        form {
+        .envios {
             max-width: 80%;
             margin: 20px auto;
             padding: 20px;

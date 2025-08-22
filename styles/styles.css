@@ -418,7 +418,7 @@ main .tienda {
 }
 main .productos {
   display: flex;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -543,10 +543,10 @@ main .card .btn:hover {
   animation: button-hover 2s ease-in-out;
 }
 main .envios {
-  max-width: 400px;
+  max-width: 350px;
   margin: 50px auto;
   padding: 30px;
-  background-color: rgb(120, 78, 126);
+  background-color: rgba(120, 78, 126, 0.8);
   box-shadow: 0 4px 8px rgba(5, 5, 5, 0.8);
   border-radius: 15px;
 }
@@ -605,21 +605,21 @@ main .envios button:hover {
     border-radius: 15px 15px 15px 15px;
     margin: 3px;
   }
-  main form {
+  main .envios {
     max-width: 80%;
     margin: 20px auto;
     padding: 20px;
   }
-  main form h2 {
+  main .envios h2 {
     font-size: 1.5rem;
   }
-  main form label {
+  main .envios label {
     font-size: 1.2rem;
   }
-  main form input, main form textarea, main form select {
+  main .envios input, main .envios textarea, main .envios select {
     font-size: 1.2rem;
   }
-  main form button {
+  main .envios button {
     font-size: 1.2rem;
   }
 }
